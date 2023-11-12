@@ -1,10 +1,10 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Footer from "./components/Footer";
-import Header from "./components/header";
+import Header from "./components/Header";
 import Main from "./components/Main";
 import Login from "./components/Login";
-import Register from "./components/Register";
+// import Register from "./components/Register";
 import { useEffect, useState } from "react";
 import Addfood from "./components/Addfood";
 import Order from "./components/Order";

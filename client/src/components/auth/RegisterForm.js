@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import signupImage from '../../assets/images/signup-img.jpg'; 
+ 
 
 function RegisterForm({ onLogin }) {
   const [username, setUsername] = useState("");
@@ -47,7 +49,7 @@ function RegisterForm({ onLogin }) {
                 <div className="main_login">
                   <div className="login_left col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div className="login_box">
-                      <h2 className="title">Sign in</h2>
+                      <h2 className="title">Sign up</h2>
                       {errorMessage && (
                         <div
                           style={{
@@ -61,7 +63,7 @@ function RegisterForm({ onLogin }) {
                           {errorMessage}
                         </div>
                       )}
-                      <form onSubmit={handleSubmit}>
+                       <form onSubmit={handleSubmit}>
                         <div className="login_form">
                           <ul>
                             <li>
@@ -176,29 +178,9 @@ function RegisterForm({ onLogin }) {
                             Speed your way through the checkout
                           </label>
                         </li>
-                        <li className="checkbox">
-                          <input
-                            id="check2"
-                            type="checkbox"
-                            name="check"
-                            value="Bike"
-                          />
-                          <label htmlFor="check2">
-                            Track your orders easily
-                          </label>
-                        </li>
-                        <li className="checkbox">
-                          <input
-                            id="check3"
-                            type="checkbox"
-                            name="check"
-                            value="Bike"
-                          />
-                          <label htmlFor="check3">
-                            Keep a record of all your purchases
-                          </label>
-                        </li>
+                        {/* ... (other checklist items) */}
                       </ul>
+                      <img src={signupImage} alt="Signup" className="signup-image" />
                     </div>
                   </div>
                 </div>

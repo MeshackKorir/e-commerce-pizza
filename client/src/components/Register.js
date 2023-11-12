@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom';
+import signupImage from './images/signup-img.jpg'; 
+import RegisterCss from 'Rgister.css'
 
 
 function Register({ onLogin }) {
@@ -157,8 +159,8 @@ function Register({ onLogin }) {
                                             </li>
                                             <li>
                                                 <NavLink  to={`/login` }>
-                                                            SignUp
-                                                        </NavLink>
+                                                    SignUp
+                                                </NavLink>
                                                 </li>
                                         </ul>
                                     </div>
@@ -168,6 +170,7 @@ function Register({ onLogin }) {
                     </div>
                 </div>
             </div>
+            <img src={signupImage} alt="Signup" className="signup-image" />
         </section>
   </>
   )
